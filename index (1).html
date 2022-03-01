@@ -1,32 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login form</title>
-    <link rel="stylesheet" href="all.min.css">
-    <link rel="stylesheet" href="style (1).css">
+	<title>Chatbot</title>
+	<link rel="icon" href="bot.png" />
+	<link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-    <div class="container">
-        <h1>Login </h1>
-        <div class="container-text">
-            <p>New to Account? <a href="signup.html">Create an account</a> </p>
-        </div>
-        <div class="input-group">
-            <label class="label-input" for="userEmailInp">Email</label>
-            <input class="input-style" id="userEmailInp" type="text" placeholder="example@xyz.com" name="useremail" required>
-            <small id="smallElement" style="color: red;"></small>
-        </div>
-        <div class="input-group">
-            <label class="label-input" for="userpasswordInp">Password</label>
-            <input class="input-style" id="userpasswordInp" type="text" name="userpassword" required>
-            <small id="smallElementpassword" style="color: red;"></small>
-        </div>
-        
-        <div class="common-btn">
-            <button id="loginBtn">Login</button>
-        </div>
-        <script src="loginpage.js"></script>
+	<div id="container" class="container">
+		<div id="chat" class="chat">
+			<div id="messages" class="messages"></div>
+			<input id="input" type="text" placeholder="Say something..." autocomplete="off" autofocus="true" />
+		</div>
+		<img src="img/bot.png" alt="Robot cartoon" height="500vh">
+	</div>
 </body>
+<script type="text/javascript" src="Bot.js" ></script>
+<script type="text/javascript" src="constants.js" ></script>
+<script type="text/javascript" src="speech(1).js" ></script>
+
 </html>
