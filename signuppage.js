@@ -137,7 +137,7 @@ function add(){
                 }
                 users.push(user)
                 localStorage.setItem("usersdata",JSON.stringify(users))
-                window.location.href="index (1).html";
+                window.location.href="stock_mark.html";
             }
             else
             {
